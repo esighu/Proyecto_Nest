@@ -1,5 +1,6 @@
 
 import {name, age,templateString} from './bases/01-types.ts';
+import {color} from './bases/02-objetcts.ts';
 import './style.css'
 import typescriptLogo from './assets/typescript.svg'
 import viteLogo from './assets/vite.svg'
@@ -15,6 +16,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
   <div>
     <h1>Get started</h1>
+    <h3>Nombre ${color.name}</h3>
+    <h3>Edad ${color.age}</h3>
     <p>Edit <code>src/main.ts</code> and save to test <code>HMR</code></p>
   </div>
   <button id="counter" type="button" class="counter"></button>
