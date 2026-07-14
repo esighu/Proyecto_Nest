@@ -1,3 +1,5 @@
+
+import {name, age,templateString} from './bases/01-types.ts';
 import './style.css'
 import typescriptLogo from './assets/typescript.svg'
 import viteLogo from './assets/vite.svg'
@@ -24,6 +26,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div id="docs">
     <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#documentation-icon"></use></svg>
     <h2>Documentation</h2>
+    <h1>${name} ${age}</h1>
     <p>Your questions, answered</p>
     <ul>
       <li>
@@ -43,6 +46,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div id="social">
     <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#social-icon"></use></svg>
     <h2>Connect with us</h2>
+    <h3>${templateString}</h3>
     <p>Join the Vite community</p>
     <ul>
       <li><a href="https://github.com/vitejs/vite" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#github-icon"></use></svg>GitHub</a></li>
