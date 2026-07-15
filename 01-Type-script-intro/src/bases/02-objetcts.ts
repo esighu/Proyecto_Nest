@@ -1,4 +1,4 @@
-import { age } from './01-types';
+
 export const pokemonIds =[1,20,30,34,66];
 pokemonIds.push(15);
 
@@ -15,5 +15,6 @@ export const color:Pokemon ={
     name:'azul' ,
     age: 26
 } 
+export const pokemons =[];
 
 console.log(pokemonIds);
